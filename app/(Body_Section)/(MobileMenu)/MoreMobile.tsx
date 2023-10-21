@@ -1,14 +1,14 @@
-"use client";
-import React from "react";
-import Link from "next/link";
-import ChooseColour from "../../(Nav_components)/ChooseColour";
-import { useDispatch, useSelector } from "react-redux";
+'use client';
+import React from 'react';
+import Link from 'next/link';
+import ChooseColour from '../../(Nav_components)/ChooseColour';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   setStarMode,
   StarMode_data,
   setStarColur,
   StarColur_data,
-} from "../../../Redux-store/Redux-action";
+} from '../../../Redux-store/Redux-action';
 
 function MoreMobile() {
   const starmode = useSelector(StarMode_data);
@@ -16,20 +16,20 @@ function MoreMobile() {
   const dispatch = useDispatch();
 
   const StarModeStatus = () => {
-    const status = localStorage.getItem("starMode");
+    const status = localStorage.getItem('starMode');
 
-    if (status === "active") {
-      dispatch(setStarMode("disable"));
-      localStorage.setItem("starMode", "disable");
+    if (status === 'active') {
+      dispatch(setStarMode('disable'));
+      localStorage.setItem('starMode', 'disable');
     } else {
-      dispatch(setStarMode("active"));
-      localStorage.setItem("starMode", "active");
+      dispatch(setStarMode('active'));
+      localStorage.setItem('starMode', 'active');
     }
   };
 
   const onColourChange = (e: string) => {
     dispatch(setStarColur(e));
-    localStorage.setItem("colour", e);
+    localStorage.setItem('colour', e);
   };
 
   return (
@@ -58,19 +58,18 @@ function MoreMobile() {
             Blog Comming Soon..
           </span>
           <p className=" mt-[5px] text-[14px] text-gray-300 ">
-            Get valuable insights and tips on my blog.
+            Get valuable insights and tips on our blog.
           </p>
         </div>
       </div>
       <Link
-        href={"AboutMe"}
+        href={'AboutMe'}
         className="w-full h-auto hover:bg-[#221d41] rounded-[8px] flex flex-row py-[13px] px-[5px] "
       >
         <div className=" flex flex-col">
           <span className=" font-bold text-gray-200 text-[16px] ">About</span>
           <p className=" mt-[5px] text-[14px] text-gray-300 ">
-            Learn more about me, my work, and how I can help you with your
-            project.
+            To Learn about us click here
           </p>
         </div>
       </Link>
@@ -107,7 +106,7 @@ function MoreMobile() {
               <span>Stars Mode : </span>
             </div>
             <div className=" mt-[10px]">
-              {starmode === "active" ? (
+              {starmode === 'active' ? (
                 <div className=" text-teal-500  text-[14px] "> Active </div>
               ) : (
                 <div className=" text-rose-500  text-[14px] "> Disable </div>
@@ -119,7 +118,7 @@ function MoreMobile() {
       <div className="w-full h-auto hover:bg-[#221d41]  select-none rounded-[8px] flex flex-col  py-[13px] px-[5px] ">
         <div className={` w-full flex flex-row items-center  justify-start`}>
           <span className=" text-[13px] 310:text-[16px] ">
-            Stars colours :{" "}
+            Stars colours :{' '}
           </span>
         </div>
         <div className=" overflow-x-scroll pl-[15px]">

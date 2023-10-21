@@ -86,7 +86,7 @@ function More() {
               Blog Comming Soon..
             </span>
             <p className=" mt-[5px] text-[14px] text-gray-300 ">
-              Get valuable insights and tips on my blog.
+              Get valuable insights and tips on our blog.
             </p>
           </div>
         </div>
@@ -100,13 +100,13 @@ function More() {
           <div className=" flex flex-col">
             <span className=" font-bold text-gray-200 text-[16px] ">About</span>
             <p className=" mt-[5px] text-[14px] text-gray-300 ">
-              Learn more about me, my work, and how I can help you with your
-              project.
+              Learn more about us, our work, and how we can help you with your
+              ideas.
             </p>
           </div>
         </Link>
         <a
-          href="https://www.youtube.com/channel/UCVBLPSX_7Tvm0iEFVMgd5-w"
+          href="https://www.youtube.com/"
           className="w-full h-auto hover:bg-[#221d41] rounded-[8px] flex flex-row py-[13px] px-[15px] "
         >
           <div className="mr-[10px]">
@@ -126,8 +126,7 @@ function More() {
               YouTube
             </span>
             <p className=" mt-[5px] text-[14px] text-gray-300 ">
-              Subscribe to my YouTube channel dedicated to teaching and sharing
-              my knowledge.
+              Youtube Channel coming soon ...
             </p>
           </div>
         </a>
@@ -150,7 +149,7 @@ function More() {
             </span>
             <p className=" mt-[5px] text-[14px] text-gray-300 ">
               Join the Discord community to ask questions, share your projects,
-              and get help from other developers.
+              and get help from our Communities.
             </p>
           </div>
         </div>
