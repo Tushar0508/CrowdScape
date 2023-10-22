@@ -53,7 +53,7 @@ function Section_2() {
           type specimen book. */}
         </p>
         <a
-          href="#Section_4"
+          href="http://localhost:5173/"
           id="button-primary"
           className=" animate-slideleftT4 px-[20px] py-[7px] text-white  cursor-pointer hover:scale-105 active:scale-90  transition-all   duration-150 select-none rounded-[5px]"
         >

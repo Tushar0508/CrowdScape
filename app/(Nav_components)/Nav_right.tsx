@@ -39,7 +39,7 @@ function Nav_right() {
           </svg>
         </div>
       )}
-      <div
+      {/* <div
         onClick={() => dispatch(set_Signup(true))}
         id="button-primary"
         className={`px-[16px] py-[5px] ${data?.user ? "hidden" : ""} border border-[#401f788e] select-none active:scale-90 transition-all duration-100 font-medium rounded-[8px] text-white cursor-pointer`}
@@ -48,14 +48,14 @@ function Nav_right() {
       </div>
       
       {/* Adding a gap between the Register and Login buttons */}
-      <div style={{ margin: '0 10px' }}></div>
+      {/* <div style={{ margin: '0 10px' }}></div> */} 
       
-      <div
+      {/* <div
         id="button-primary"
         className={`px-[16px] py-[5px] ${data?.user ? "hidden" : ""} border border-[#401f788e] select-none active:scale-90 transition-all duration-100 font-medium rounded-[8px] text-white cursor-pointer`}
       >
         <span>Login</span>
-      </div>
+      </div> */}
 
       <div
         onClick={() => signOut()}
